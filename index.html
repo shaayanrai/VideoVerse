@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Community Stories on Film</title>
+    <style>
+        /* CSS styles go here */
+        body {
+            font-family: 'Pacifico', cursive;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Add your CSS styles here */
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Community Video Hub</h1>
+        <p>Share your stories and experiences with our diverse community!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="upload-section">
+            <h2>Share Your Story</h2>
+            <p>Upload your video to contribute to our community's digital canvas.</p>
+            <form id="upload-form" action="upload.php" method="post" enctype="multipart/form-data">
+                <label for="video">Select Video:</label>
+                <input type="file" name="video" id="video" accept="video/*" required>
+                <label for="description">Video Description:</label>
+                <textarea name="description" id="description" rows="4" required></textarea>
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+
+        <section id="video-list">
+            <h2>Community Videos</h2>
+            <!-- Display community-contributed videos here -->
+            <!-- You'll need to dynamically generate video thumbnails and descriptions -->
+        </section>
+    </main>
+
+    <footer>
+        <img width="400" "footer-image" src="Community-Gathering.png" alt="Footer Image" />
+        <p>&copy; 2023 Community Video Hub</p>
+    </footer>
+</body>
+</html>
